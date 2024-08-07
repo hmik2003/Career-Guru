@@ -1,19 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!--CSS Files-->
-    <link rel="stylesheet" href="style.css">
-    
+    <title>Career Guru</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
-    <div>
-        <h>Hello World!</h>
-        this is a fucking div
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Career Guru</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#career-guidance">Career Guidance</a></li>
+            <li><a href="#university-recommendations">University Recommendations</a></li>
+            <li><a href="#admission-info">Admission Info</a></li>
+            <li><a href="#resources-certifications">Resources & Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-text">
+            <h1>Welcome to Our University Portal</h1>
+            <p>Find the best universities and programs for you.</p>
+        </div>
+    </section>
+
+    <!-- Career Guidance Section -->
+    <section id="career-guidance" class="section blue-section">
+        <h2>Career Guidance</h2>
+        <div class="career-guidance-carousel" id="careerGuidanceCarousel">
+            <div class="career-guidance-carousel-inner">
+                <div class="career-guidance-card">
+                    <img src="pics/school-img.png" alt="High School Subject Choices" class="career-guidance-img">
+                    <h3>High School Subject Choices</h3>
+                    <p>Guide on selecting high school subjects.</p>
+                </div>
+                <div class="career-guidance-card">
+                    <img src="pics/flow-diagram-img.png" alt="Career Pathways" class="career-guidance-img">
+                    <h3>Career Pathways</h3>
+                    <p>Information on various career paths.</p>
+                </div>
+                <div class="career-guidance-card">
+                    <img src="pics/switching-img.svg" alt="Switching Careers" class="career-guidance-img">
+                    <h3>Switching Careers</h3>
+                    <p>Tips for changing career paths.</p>
+                </div>
+                <div class="career-guidance-card">
+                    <img src="pics/expert-img.png" alt="Contact Career Gurus" class="career-guidance-img">
+                    <h3>Contact Career Gurus</h3>
+                    <p>Book an appointment with our experts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- University Recommendations Section -->
+    <section id="university-recommendations" class="section grey-section">
+        <h2>University Recommendations</h2>
+        <div class="university-carousel" id="universityCarousel">
+            <div class="university-carousel-inner">
+                <div class="university-card">
+                    <img src="pics/FAST.jpg" alt="FAST">
+                    <h3>FAST</h3>
+                    <p>Deadline: 31st August</p>
+                    <button class="details-button">View Details &rarr;</button>
+                </div>
+                <div class="university-card">
+                    <img src="pics/NUST.jpg" alt="NUST">
+                    <h3>NUST</h3>
+                    <p>Deadline: 15th September</p>
+                    <button class="details-button">View Details &rarr;</button>
+                </div>
+                <div class="university-card">
+                    <img src="pics/PAF-IAST.png" alt="PAF-IAST">
+                    <h3>PAF-IAST</h3>
+                    <p>Deadline: 10th October</p>
+                    <button class="details-button">View Details &rarr;</button>
+                </div>
+                <div class="university-card">
+                    <img src="pics/COMSATS-ISB.jpg" alt="COMSATS Islamabad">
+                    <h3>COMSATS Islamabad</h3>
+                    <p>Deadline: 20th October</p>
+                    <button class="details-button">View Details &rarr;</button>
+                </div>
+                <div class="university-card">
+                    <img src="pics/LUMS.jpg" alt="LUMS">
+                    <h3>LUMS</h3>
+                    <p>Deadline: 5th November</p>
+                    <button class="details-button">View Details &rarr;</button>
+                </div>
+                <div class="university-card">
+                    <img src="pics/UoW.jfif" alt="University of Wah">
+                    <h3>University of Wah</h3>
+                    <p>Deadline: 25th November</p>
+                    <button class="details-button">View Details &rarr;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission Info Section -->
+    <section id="admission-info" class="section blue-section">
+        <h2>Admission Info</h2>
+        <div class="admission-info-carousel" id="admissionInfoCarousel">
+            <div class="admission-info-carousel-inner">
+                <div class="admission-info-card">
+                    <img src="pics/merit-list.png" alt="Merit Lists" class="admission-info-img">
+                    <h3>Merit Lists</h3>
+                    <p>Past and predicted merit lists for various universities.</p>
+                </div>
+                <div class="admission-info-card">
+                    <img src="pics/facilities.png" alt="Facilities" class="admission-info-img">
+                    <h3>Facilities</h3>
+                    <p>Information on university facilities such as libraries, labs, and sports complexes.</p>
+                </div>
+                <div class="admission-info-card">
+                    <img src="pics/track-application.png" alt="Track Applications" class="admission-info-img">
+                    <h3>Track Applications</h3>
+                    <p>Track the status of your applications.</p>
+                </div>
+                <div class="admission-info-card">
+                    <img src="pics/leaderboard.png" alt="Leaderboard" class="admission-info-img">
+                    <h3>Leaderboard</h3>
+                    <p>Check your rankings and compare with peers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources & Certifications Section -->
+    <section id="resources-certifications" class="section white-section">
+        <h2>Resources & Certifications</h2>
+        <div class="resources-certifications-inner">
+            <div class="resources-card">
+                <img src="pics/study-material.png" alt="Entry Test Resources" class="resources-img">
+                <h3>Entry Test Resources</h3>
+                <p>Preparation resources for entry tests, including books, guides, and online resources.</p>
+            </div>
+            <div class="resources-card">
+                <img src="pics/entry-test.png" alt="Entry Test Patterns" class="resources-img">
+                <h3>Entry Test Patterns</h3>
+                <p>Information on entry tests and patterns required for admissions.</p>
+            </div>
+            <div class="resources-card">
+                <img src="pics/workshops.png" alt="Workshops" class="resources-img">
+                <h3>Workshops</h3>
+                <p>Upcoming workshops and events related to admissions and career guidance.</p>
+            </div>
+            <div class="resources-card">
+                <img src="pics/certifications.png" alt="Certifications" class="resources-img">
+                <h3>Certifications</h3>
+                <p>Information on available certifications and how to obtain them.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+<section id="contact" class="section blue-section">
+    <h2>Contact</h2>
+    <form class="contact-form">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+    <div class="map">Map Placeholder</div>
+    <div class="social-media">
+        <a href="#"><img src="/icons/fb.png" alt="Facebook" class="social-icon"></a>
+        <a href="#"><img src="/icons/twitter.webp" alt="Twitter" class="social-icon"></a>
+        <a href="#"><img src="/icons/insta.webp" alt="Instagram" class="social-icon"></a>
+        <a href="#"><img src="/icons/linkedin.webp" alt="LinkedIn" class="social-icon"></a>
     </div>
-    
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div>Quick Links</div>
+        <div>Contact Information</div>
+        <div>Social Media Icons</div>
+        <div>&copy; 2024 Career Guru. All rights reserved.</div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>

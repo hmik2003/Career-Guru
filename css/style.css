@@ -1,3 +1,315 @@
-body{
-    background-color:rgb(18, 13, 19);
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+.navbar {
+    background-color: #0044cc;
+    color: white;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/pics/output.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(6px);
+    z-index: 1;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2em;
+    border-radius: 8px;
+}
+
+.section {
+    padding: 2em;
+}
+
+.blue-section {
+    background-color: #e0f7ff;
+}
+
+.grey-section {
+    background-color: #f4f4f4;
+}
+
+.subsection {
+    margin-bottom: 1em;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #0044cc;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.university-carousel {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+}
+
+.university-carousel-inner {
+    display: flex;
+    width: 100%;
+    animation: scroll 10s linear infinite;
+}
+
+.university-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 1em;
+    margin-right: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+}
+
+.university-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.university-card h3 {
+    margin: 0.5em 0;
+}
+
+.university-card p {
+    margin: 0.5em 0;
+}
+
+.details-button {
+    background-color: #0044cc;
+    color: white;
+    padding: 0.5em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: auto;
+    margin-bottom: 0.5em;
+}
+
+.career-guidance-carousel {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+}
+
+.career-guidance-carousel-inner {
+    display: flex;
+    width: 100%;
+    gap: 1em;
+}
+
+.career-guidance-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 1em;
+    margin-right: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.career-guidance-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+
+.career-guidance-card h3 {
+    margin: 0.5em 0;
+}
+
+.career-guidance-card p {
+    margin: 0.5em 0;
+}
+
+/* Admission Info Section */
+.admission-info-carousel {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+}
+
+.admission-info-carousel-inner {
+    display: flex;
+    width: 100%;
+    gap: 1em;
+}
+
+.admission-info-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 1em;
+    margin-right: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    overflow: hidden;  /* Ensure content does not overflow the card */
+    word-wrap: break-word;  /* Enable word wrapping */
+}
+
+.admission-info-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+
+.admission-info-card h3 {
+    margin: 0.5em 0;
+}
+
+.admission-info-card p {
+    margin: 0.5em 0;
+    overflow: hidden;  /* Ensure text does not overflow */
+    text-overflow: ellipsis;  /* Add ellipsis if text is too long */
+    white-space: normal;  /* Allow text to wrap to next line */
+}
+
+/* Resources Section */
+.resources-certifications-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center; /* Center the cards in the container */
+}
+
+.resources-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Match the width of admission-info-card */
+    text-align: center;
+    overflow: hidden;  /* Ensure content does not overflow the card */
+    word-wrap: break-word;  /* Enable word wrapping */
+}
+
+.resources-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+
+.resources-card h3 {
+    margin: 0.5em 0;
+}
+
+.resources-card p {
+    margin: 0.5em 0;
+    overflow: hidden;  /* Ensure text does not overflow */
+    text-overflow: ellipsis;  /* Add ellipsis if text is too long */
+    white-space: normal;  /* Allow text to wrap to next line */
+}
+
+/* Ensure consistent spacing in the Resources & Certifications section */
+.resources-certifications-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.social-icon {
+    width: 30px; /* Adjust as needed */
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.footer {
+    background-color: #0044cc;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
 }
